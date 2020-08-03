@@ -42,7 +42,6 @@ def write_comments_to_xlsx(xlsx_file_name, comments):
     worksheet.set_column('B:B', 25)
     worksheet.set_column('C:C', 100)
     cell_format = workbook.add_format()
-    # cell_format.set_text_wrap()
     col = 0
     for comment_number, comment in enumerate(comments):
         row = comment_number
