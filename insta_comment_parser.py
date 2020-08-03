@@ -56,7 +56,7 @@ def write_comments_to_xlsx(xlsx_file_name, comments):
 def main():
     post, skip_author, xlsx_file_name, enable_debug = parse_args()
     if enable_debug:
-        logging.basicConfig(level=logging.INFO)
+        logging.basicConfig(level=logging.DEBUG)
     comments = get_comments(post, skip_author)
     write_comments_to_xlsx(xlsx_file_name, comments)
 
