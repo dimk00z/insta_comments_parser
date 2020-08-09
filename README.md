@@ -18,7 +18,10 @@ For run script use ` python insta_comment_parser.py --post {post_shortcode} `
 
 All script's params:
 
-1. `--post` - instagram post's shortcode
-2. `--skip_author` - skip author's comments
-3. `--xlsx_file_name` - file name
-4. `--enable_debug` - enable debug logs
+1. `-p`, `--post` - instagram post's shortcode
+2. `-s`, `--skip_author` - skip author's comments
+3. `-x`, `--xlsx_file_name` - file name
+4. `-d`, `--enable_debug` - enable debug logs
+5. `-t`, `--comment_text` - comments text, `,` to split
+
+`python insta_comment_parser.py -p *** -t **,** -x /mnt/d/comments.xlsx`
